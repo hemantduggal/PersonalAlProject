@@ -2,13 +2,16 @@ codeunit 50001 salesorder
 {       ///---Cle sales 
     [EventSubscriber(ObjectType::Table, Database::"Sales Header", OnAfterCopySellToCustomerAddressFieldsFromCustomer, '', false, false)]
     local procedure CopycustomFields(SellToCustomer: Record Customer; var SalesHeader: Record "Sales Header")
+    var
+
     begin
+
         SalesHeader."Vendor No." := SellToCustomer."Vendor No.";
         SalesHeader."Vendor Address" := SellToCustomer."Vendor Address";
         SalesHeader."Vendor Name" := SellToCustomer."Vendor Name";
         // SalesHeader.Customerid := SellToCustomer.customer;
         // SalesHeader."Contact person" := SellToCustomer."Contact person";
-        // SalesHeader.Rema  rks := SellToCustomer.Remarks;
+        // SalesHeader.Remarks := SellToCustomer.Remarks;
         // SalesHeader.Deal_date := SellToCustomer.Deal_date;
         // SalesHeader."order category" := SellToCustomer."order category";
     end;

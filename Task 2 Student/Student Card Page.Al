@@ -125,4 +125,8 @@ page 50115 "Student card Page"
 
     var
         myInt: Integer;
+        c: Codeunit "Power BI Url Mgt";
+        p: page 6327;
+
+
 }

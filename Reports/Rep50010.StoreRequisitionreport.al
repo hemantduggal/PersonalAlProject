@@ -17,6 +17,8 @@ report 50010 "Store Requisition report"
             {
 
             }
+            
+        
             column(No_; "Requisition Slip No.")
             {
 

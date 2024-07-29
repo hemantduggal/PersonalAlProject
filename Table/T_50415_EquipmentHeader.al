@@ -117,7 +117,6 @@ table 50415 EquipmentHeader
     end;
 
     var
-
         NoSeriesMgt: Codeunit NoSeriesManagement;
         GLSetup: Record "General Ledger Setup";
         RecNoSeries: Record "No. Series";

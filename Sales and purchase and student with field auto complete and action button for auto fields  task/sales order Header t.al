@@ -265,6 +265,12 @@ tableextension 50105 salesorders extends "Sales Header"
             DataClassification = ToBeClassified;
             Editable = false;
         }
+        field(50005; "Order Type"; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = "",Standard,Export;
+        }
+
 
 
 

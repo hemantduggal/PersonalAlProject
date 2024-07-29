@@ -18,6 +18,10 @@ pageextension 50103 salesorderext extends "Sales Order"
                 ApplicationArea = all;
                 Editable = false;
             }
+            field("Order Type"; Rec."Order Type")
+            {
+                ApplicationArea = all;
+            }
         }
         modify("Sell-to Customer No.")
         {

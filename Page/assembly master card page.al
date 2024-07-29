@@ -15,6 +15,7 @@ page 50005 "ASSEMBLY MASTER CARD PAGE"
                 field("Assembly No"; Rec."Assembly No")
                 {
                     ApplicationArea = All;
+
                 }
                 field("Assembly Name"; Rec."Assembly Name")
                 {
@@ -83,4 +84,7 @@ page 50005 "ASSEMBLY MASTER CARD PAGE"
             }
         }
     }
+    var
+
+        p: page 9022;
 }

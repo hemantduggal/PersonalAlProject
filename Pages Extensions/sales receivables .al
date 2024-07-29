@@ -12,6 +12,10 @@ pageextension 50200 SalesReceivablesSetupPageExt extends "Sales & Receivables Se
                 Caption = 'Book Nos.';
                 ApplicationArea = All;
             }
+            field("Export Sales Order"; rec."Export Sales Order")
+            {
+                ApplicationArea = all;
+            }
         }
     }
 }

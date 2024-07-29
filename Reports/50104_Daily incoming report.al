@@ -117,8 +117,17 @@ report 50165 Dailytincoming
 
 
 
+
+
+
                 end;
             }
+            trigger OnAfterGetRecord()
+            var
+            begin
+                // d := Date2DWY("Purch. Rcpt. Header"."Document Date", 2);
+            end;
+
             trigger OnPreDataItem()
             var
             begin
@@ -183,4 +192,5 @@ report 50165 Dailytincoming
         startdate: date;
         enddate: date;
         CompanyInfo: Record "Company Information";
+        d: Integer;
 }

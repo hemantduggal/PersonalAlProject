@@ -11,6 +11,7 @@ table 50012 storereqheader
             var
                 myInt: Integer;
                 srl: Record "Store requisition line";
+                s: page "sales order";
 
             begin
                 IF "NO." <> xRec."NO." THEN BEGIN

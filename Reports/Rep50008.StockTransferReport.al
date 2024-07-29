@@ -14,6 +14,7 @@ report 50008 "Stock Transfer Report"
             {
 
             }
+            
             column(OutputNo; OutputNo)
             {
 

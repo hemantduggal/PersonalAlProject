@@ -11,6 +11,12 @@ tableextension 50001 SalesReceivablesSetupExt extends "Sales & Receivables Setup
             Caption = 'Book Nos.';
             TableRelation = "No. Series";
         }
-        
+        field(50201; "Export Sales Order"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "No. Series";
+        }
+
+
     }
 }
