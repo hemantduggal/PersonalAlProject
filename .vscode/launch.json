@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            //https://businesscentral.dynamics.com/1daff524-2637-4d6e-9080-b8d6965788ff/BFM_DevelopmentDB
+            "name": "Microsoft cloud sandbox Development",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "authentication": "AAD",
+            "tenant": "a4089f7d-e186-426a-8e42-6f27d34a2b5a",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode":"ForceSync"
+        }
+    ]
+}
+

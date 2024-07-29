@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="caption">
+          <DataField>caption</DataField>
+        </Field>
+        <Field Name="salepname">
+          <DataField>salepname</DataField>
+        </Field>
+        <Field Name="Salesperson_Code">
+          <DataField>Salesperson_Code</DataField>
+        </Field>
+        <Field Name="thirty">
+          <DataField>thirty</DataField>
+        </Field>
+        <Field Name="thirtysixty">
+          <DataField>thirtysixty</DataField>
+        </Field>
+        <Field Name="sixtyninty">
+          <DataField>sixtyninty</DataField>
+        </Field>
+        <Field Name="nintyonetwenty">
+          <DataField>nintyonetwenty</DataField>
+        </Field>
+        <Field Name="onetwentyoneeighty">
+          <DataField>onetwentyoneeighty</DataField>
+        </Field>
+        <Field Name="greateroneeighty">
+          <DataField>greateroneeighty</DataField>
+        </Field>
+        <Field Name="startdate">
+          <DataField>startdate</DataField>
+        </Field>
+        <Field Name="ToDate">
+          <DataField>ToDate</DataField>
+        </Field>
+        <Field Name="Document_No_">
+          <DataField>Document_No_</DataField>
+        </Field>
+        <Field Name="cust">
+          <DataField>cust</DataField>
+        </Field>
+        <Field Name="Customer_Name">
+          <DataField>Customer_Name</DataField>
+        </Field>
+        <Field Name="Balance">
+          <DataField>Balance</DataField>
+        </Field>
+        <Field Name="BalanceFormat">
+          <DataField>BalanceFormat</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Document_Type">
+          <DataField>Document_Type</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAdd2">
+          <DataField>CompanyAdd2</DataField>
+        </Field>
+        <Field Name="CompanyPostCode">
+          <DataField>CompanyPostCode</DataField>
+        </Field>
+        <Field Name="Due_Date">
+          <DataField>Due_Date</DataField>
+        </Field>
+        <Field Name="Original_Amount">
+          <DataField>Original_Amount</DataField>
+        </Field>
+        <Field Name="Original_AmountFormat">
+          <DataField>Original_AmountFormat</DataField>
+        </Field>
+        <Field Name="Remaining_Amount">
+          <DataField>Remaining_Amount</DataField>
+        </Field>
+        <Field Name="Remaining_AmountFormat">
+          <DataField>Remaining_AmountFormat</DataField>
+        </Field>
+        <Field Name="Remarks">
+          <DataField>Remarks</DataField>
+        </Field>
+        <Field Name="CompanyInfoname">
+          <DataField>CompanyInfoname</DataField>
+        </Field>
+        <Field Name="Customer_No_">
+          <DataField>Customer_No_</DataField>
+        </Field>
+        <Field Name="col1Days">
+          <DataField>col1Days</DataField>
+        </Field>
+        <Field Name="col1DaysFormat">
+          <DataField>col1DaysFormat</DataField>
+        </Field>
+        <Field Name="col2Days">
+          <DataField>col2Days</DataField>
+        </Field>
+        <Field Name="col2DaysFormat">
+          <DataField>col2DaysFormat</DataField>
+        </Field>
+        <Field Name="col3Days">
+          <DataField>col3Days</DataField>
+        </Field>
+        <Field Name="col3DaysFormat">
+          <DataField>col3DaysFormat</DataField>
+        </Field>
+        <Field Name="col4Days">
+          <DataField>col4Days</DataField>
+        </Field>
+        <Field Name="col4DaysFormat">
+          <DataField>col4DaysFormat</DataField>
+        </Field>
+        <Field Name="col5Days">
+          <DataField>col5Days</DataField>
+        </Field>
+        <Field Name="col5DaysFormat">
+          <DataField>col5DaysFormat</DataField>
+        </Field>
+        <Field Name="col6Days">
+          <DataField>col6Days</DataField>
+        </Field>
+        <Field Name="col6DaysFormat">
+          <DataField>col6DaysFormat</DataField>
+        </Field>
+        <Field Name="TOtalAMt">
+          <DataField>TOtalAMt</DataField>
+        </Field>
+        <Field Name="TOtalAMtFormat">
+          <DataField>TOtalAMtFormat</DataField>
+        </Field>
+        <Field Name="TOtalAMt1">
+          <DataField>TOtalAMt1</DataField>
+        </Field>
+        <Field Name="TOtalAMt1Format">
+          <DataField>TOtalAMt1Format</DataField>
+        </Field>
+        <Field Name="calculateage">
+          <DataField>calculateage</DataField>
+        </Field>
+        <Field Name="paymentterm">
+          <DataField>paymentterm</DataField>
+        </Field>
+        <Field Name="TOtalAMt2">
+          <DataField>TOtalAMt2</DataField>
+        </Field>
+        <Field Name="TOtalAMt2Format">
+          <DataField>TOtalAMt2Format</DataField>
+        </Field>
+        <Field Name="TOtalRemainAMt">
+          <DataField>TOtalRemainAMt</DataField>
+        </Field>
+        <Field Name="TOtalRemainAMtFormat">
+          <DataField>TOtalRemainAMtFormat</DataField>
+        </Field>
+        <Field Name="TOtalAMt3">
+          <DataField>TOtalAMt3</DataField>
+        </Field>
+        <Field Name="TOtalAMt3Format">
+          <DataField>TOtalAMt3Format</DataField>
+        </Field>
+        <Field Name="TOtalAMt4">
+          <DataField>TOtalAMt4</DataField>
+        </Field>
+        <Field Name="TOtalAMt4Format">
+          <DataField>TOtalAMt4Format</DataField>
+        </Field>
+        <Field Name="TOtalAMt5">
+          <DataField>TOtalAMt5</DataField>
+        </Field>
+        <Field Name="TOtalAMt5Format">
+          <DataField>TOtalAMt5Format</DataField>
+        </Field>
+        <Field Name="TOtalAMt6">
+          <DataField>TOtalAMt6</DataField>
+        </Field>
+        <Field Name="TOtalAMt6Format">
+          <DataField>TOtalAMt6Format</DataField>
+        </Field>
+        <Field Name="TOtalAMtcolwise">
+          <DataField>TOtalAMtcolwise</DataField>
+        </Field>
+        <Field Name="TOtalAMtcolwiseFormat">
+          <DataField>TOtalAMtcolwiseFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
